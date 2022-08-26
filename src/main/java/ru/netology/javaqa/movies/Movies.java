@@ -27,8 +27,8 @@ public class Movies {
 
     public String[] findLast() {
         int resultLength;
-        if (limit == 10) {
-            resultLength = 10;
+        if (movies.length < limit) {
+            resultLength = movies.length;
         } else {
            resultLength = limit;
         }
